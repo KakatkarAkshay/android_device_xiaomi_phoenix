@@ -18,7 +18,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi K30
 PRODUCT_MANUFACTURER := Redmi
 
 PRODUCT_AAPT_CONFIG := xxxhdpi
@@ -31,7 +30,6 @@ TARGET_SCREEN_WIDTH := 1080
 # Build info
 BUILD_FINGERPRINT := "Redmi/phoenix/phoenix:10/QKQ1.190825.002/V11.0.9.0.QGHCNXM:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=phoenix \
     PRIVATE_BUILD_DESC="phoenix-user 10 QKQ1.190825.002 V11.0.9.0.QGHCNXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
