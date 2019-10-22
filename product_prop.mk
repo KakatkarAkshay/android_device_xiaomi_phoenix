@@ -28,6 +28,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.volte_avail_ovr := 1 \
     persist.dbg.vt_avail_ovr := 1
 
+# Mobile Netowork Settings V2
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.fflag.override.settings_network_and_internet_v2=true
+
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,com.google.android.GoogleCamera
