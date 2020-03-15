@@ -5,7 +5,10 @@
 #
 
 BOARD_VENDOR := xiaomi
-DEVICE_PATH := device/xiaomi/picasso
+DEVICE_PATH := device/xiaomi/phoenix
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := phoenix,phoenixin
 
 # Architecture
 TARGET_ARCH := arm64
@@ -32,7 +35,7 @@ USE_XML_AUDIO_POLICY_CONF := 1
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := lito
+TARGET_BOOTLOADER_BOARD_NAME := sm6150
 TARGET_NO_BOOTLOADER := true
 
 # Filesystem
@@ -42,7 +45,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 BOARD_KERNEL_BASE := 0x0000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 cgroup.memory=nokmem,nosocket loop.max_part=7 buildvariant=user
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
-BOARD_KERNEL_CMDLINE += androidboot.selinux=enforcing
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_OFFSET := 0x1000000
@@ -54,8 +57,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_KERNEL_SEPARATED_DTBO := false
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7250
-TARGET_KERNEL_CONFIG := vendor/picasso_user_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6150
+TARGET_KERNEL_CONFIG := vendor/phoenix_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 NEED_KERNEL_MODULE_SYSTEM:= true
 BOARD_BOOTIMG_HEADER_VERSION := 2
@@ -82,7 +85,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 114934394880
 BOARD_CACHEIMAGE_PARTITION_SIZE := 402653184
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := system product
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product system
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2147483648
 BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := 16384

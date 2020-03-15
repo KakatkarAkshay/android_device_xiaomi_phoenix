@@ -7,7 +7,7 @@
 
 set -e
 
-DEVICE=picasso
+DEVICE=phoenix
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks
