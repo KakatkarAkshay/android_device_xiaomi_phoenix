@@ -23,6 +23,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.bluetooth.library_name=libbluetooth.so
 
+# VoLTE
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.dbg.volte_avail_ovr := 1 \
+    persist.dbg.vt_avail_ovr := 1
+
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     vendor.camera.aux.packagelist=org.lineageos.snap,net.sourceforge.opencamera,com.google.android.GoogleCamera
