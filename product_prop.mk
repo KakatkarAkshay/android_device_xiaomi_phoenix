@@ -32,6 +32,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.fflag.override.settings_network_and_internet_v2=true
 
+# preferred network (global)
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.telephony.default_network=22,20
+
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \
     vendor.camera.aux.packagelist=org.lineageos.snap,com.google.android.GoogleCamera,org.codeaurora.snapcam \
