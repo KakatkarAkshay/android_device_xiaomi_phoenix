@@ -1,0 +1,2 @@
+allow hal_mtdservice_default hal_mtdservice_default:capability { dac_read_search };
+allow hal_mtdservice_default persist_data_file:dir { getattr };

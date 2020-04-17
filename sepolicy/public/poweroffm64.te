@@ -1,0 +1,1 @@
+allow poweroffm64 sysfs_bootinfo:file { open  read };

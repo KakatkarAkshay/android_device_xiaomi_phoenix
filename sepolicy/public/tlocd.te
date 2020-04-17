@@ -1,0 +1,1 @@
+allow tlocd smcinvoke_device:chr_file { ioctl  open  read };

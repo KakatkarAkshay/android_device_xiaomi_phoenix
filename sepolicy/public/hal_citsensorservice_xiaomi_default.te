@@ -1,0 +1,4 @@
+allow hal_citsensorservice_xiaomi_default diag_device:chr_file { ioctl };
+allow hal_citsensorservice_xiaomi_default default_prop:file { getattr  map  open  read };
+allow hal_citsensorservice_xiaomi_default ion_device:chr_file { ioctl  open };
+allow hal_citsensorservice_xiaomi_default sensors_prop:file { getattr  map  open };

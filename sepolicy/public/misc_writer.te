@@ -1,0 +1,3 @@
+allow misc_writer proc_cmdline:file { getattr  open };
+allow misc_writer sysfs_dt_firmware_android:dir { open  read  search };
+allow misc_writer sysfs_dt_firmware_android:file { getattr  open  read };
