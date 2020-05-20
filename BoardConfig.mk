@@ -54,5 +54,8 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# ANXCamera
+-include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/phoenix/BoardConfigVendor.mk
